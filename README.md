@@ -80,7 +80,7 @@ vagrant-ansible-docker-infra/
 
 ```bash
 git clone https://github.com/oscar-olveiraa/vagrant-ansible-infrastructure
-cd vagrant-ansible-docker-infra
+cd vagrant-ansible-infrastructure
 ```
 
 ---
