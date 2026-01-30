@@ -79,7 +79,7 @@ vagrant-ansible-docker-infra/
 ### 2️⃣ Clonar el repositorio
 
 ```bash
-git clone https://github.com/tuusuario/vagrant-ansible-docker-infra.git
+git clone https://github.com/oscar-olveiraa/vagrant-ansible-infrastructure
 cd vagrant-ansible-docker-infra
 ```
 
@@ -94,7 +94,6 @@ chmod +x deploy.sh
 
 Este script:
 
-* Comprueba dependencias
 * Levanta la máquina virtual
 * Ejecuta Ansible dentro de la VM
 * Instala Docker
@@ -148,8 +147,6 @@ Al finalizar el despliegue:
 * El contenedor web está levantado
 * El servicio es accesible desde el host
 
-El entorno puede destruirse y recrearse de forma idéntica en cualquier momento.
-
 ---
 
 ## 🧠 Conclusiones
@@ -159,23 +156,14 @@ Este proyecto demuestra:
 * Uso real de **infraestructura como código**
 * Automatización completa desde cero
 * Separación entre infraestructura, configuración y servicios
-* Capacidad de depuración y validación por capas
-
-Aunque se trata de un mini-proyecto, refleja un flujo muy similar al utilizado en entornos profesionales.
 
 ---
 
 ## 🔮 Posibles mejoras futuras
 
-* Endurecimiento adicional de SSH
 * Monitorización (Prometheus + Grafana)
-* Variables dinámicas para servicios
-* Migración del mismo entorno a Terraform
-* Despliegue multi-VM
+* Despliegue multi-VM para la creación de redundancia
 
 ---
 
-## 👤 Autor
-
-Proyecto desarrollado como parte de un portfolio personal orientado a **sistemas, infraestructura y redes**.
 
