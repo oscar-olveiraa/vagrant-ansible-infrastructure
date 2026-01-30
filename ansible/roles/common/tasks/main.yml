@@ -1,0 +1,17 @@
+- name: Actualizar sistema
+  apt:
+    update_cache: yes
+    upgrade: dist
+
+- name: Instalar paquetes basicos
+  apt:
+    name:
+      - curl
+      - vim
+      - git
+      - htop
+    state: present
+
+- name: Configurar zona horaria
+  timezone:
+    name: "{{ timezone }}"

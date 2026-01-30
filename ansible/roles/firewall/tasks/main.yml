@@ -1,0 +1,20 @@
+- name: Instalar UFW
+  apt:
+    name: ufw
+    state: present
+
+- name: Permitir SSH
+  ufw:
+    rule: allow
+    name: OpenSSH
+
+- name: Permitir HTTP
+  ufw:
+    rule: allow
+    port: "{{ web_port }}"
+    proto: tcp
+
+- name: Activar firewall
+  ufw:
+    state: enabled
+    policy: deny

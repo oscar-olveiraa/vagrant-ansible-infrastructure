@@ -1,0 +1,18 @@
+- name: Instalar Docker
+  apt:
+    name:
+      - docker.io
+      - docker-compose
+    state: present
+
+- name: Habilitar Docker
+  systemd:
+    name: docker
+    enabled: true
+    state: started
+
+- name: Añadir usuario vagrant al grupo docker
+  user:
+    name: vagrant
+    groups: docker
+    append: yes

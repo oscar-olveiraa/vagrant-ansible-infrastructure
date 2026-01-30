@@ -1,0 +1,8 @@
+- name: Provision completa del servidor
+  hosts: all
+  become: true
+  roles:
+    - common
+    - docker
+    - firewall
+    - web
